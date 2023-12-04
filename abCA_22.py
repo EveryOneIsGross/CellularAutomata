@@ -1,3 +1,7 @@
+'''
+Create plain language ritual sequences from CA. Will be used for LLM agent state space."
+'''
+
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 import matplotlib.pyplot as plt
