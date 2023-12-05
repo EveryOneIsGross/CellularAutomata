@@ -341,6 +341,8 @@ In summary, this project is a creative blend of cellular automata theory, image 
 
 ## ca_ENCODERLAB.py
 
+![ca_lab](https://github.com/EveryOneIsGross/CellularAutomata/assets/23621140/468835b4-64c0-4b4b-a351-34092224749c)
+
 This project involves creating an interactive interface for experimenting with cellular automata (CA), featuring various modulation techniques and the ability to encode and decode textual information. Here's a detailed summary:
 
 1. **CA Pattern Generation**:
