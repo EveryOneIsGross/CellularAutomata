@@ -66,6 +66,9 @@ This project is particularly useful for creating stylized vector representations
 
 ## caGEN_3D_XOR.py
 
+![XOR3D](https://github.com/EveryOneIsGross/CellularAutomata/assets/23621140/65bbf893-42a4-4cc0-a432-728b3b4438fe)
+
+
 This project involves generating and visualizing a 3D representation of cellular automata interactions using specific rules. The key components and steps are as follows:
 
 1. **Rule Pattern Generation**: The function `generate_rule_pattern` creates a cellular automaton pattern based on a given rule number. This rule number is converted into a binary string representing various cell states (e.g., alive or dead) based on the neighboring cells.
