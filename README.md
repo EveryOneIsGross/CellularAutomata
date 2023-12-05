@@ -218,8 +218,6 @@ In summary, this project demonstrates a cellular automaton that evolves through 
 
 ![laplace_WAVE](https://github.com/EveryOneIsGross/CellularAutomata/assets/23621140/caf45b97-f993-4ea7-b2cc-23ea325b9bef)
 
-![modulated_ca_step_100_20231205-173807](https://github.com/EveryOneIsGross/CellularAutomata/assets/23621140/a9ed23fd-2b0a-4d37-8ebf-5474d0660dee)
-
 This project combines cellular automata (CA), image processing, and audio synthesis to create complex states and generate playable audio files.
 
 1. **Cellular Automata Generation**:
