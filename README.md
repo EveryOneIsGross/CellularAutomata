@@ -24,6 +24,9 @@ The aim of the project is to provide a novel way to interpret and engage with th
 
 ## automata_MAGICEYE.py
 
+![magic_eye1501620231117-124406](https://github.com/EveryOneIsGross/CellularAutomata/assets/23621140/a21f511b-0755-4671-a440-6cec2e65c443)
+
+
 This project involves the creation of unique animated GIFs by combining Cellular Automata (CA) patterns with depth maps derived from existing GIF images. The key components and steps are as follows:
 
 1. **Cellular Automaton Rule Generation**: A function `cellular_automaton_rule` converts a given rule number (between 0-255) into a binary string. This binary string represents the rule for the classic cellular automaton.
