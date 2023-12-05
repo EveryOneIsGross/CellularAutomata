@@ -1,5 +1,6 @@
 # CellularAutomata
-My numerous expeirments in CA
+
+Several CA ideas. 
 
 ## abCA.py
 
