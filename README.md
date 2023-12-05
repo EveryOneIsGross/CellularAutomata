@@ -3,6 +3,9 @@ My numerous expeirments in CA
 
 ## abCA.py
 
+![ca_evolution_20231120183918](https://github.com/EveryOneIsGross/CellularAutomata/assets/23621140/a48af7f3-7513-4711-a5b9-ade330a71788)
+
+
 This project involves creating a unique approach to visualizing and exploring the Abramelin Ritual, a traditional ceremonial magic ritual, using Cellular Automata (CA). 
 
 1. **Ritual Descriptions**: The project starts with a list of 17 steps describing the Abramelin Ritual, including creating a sacred space, performing daily prayers, and seeking guidance from a Holy Guardian Angel.
