@@ -2,6 +2,63 @@
 
 Several CA ideas. 
 
+## ruleDITHER.py
+
+This processes images to create cellular automata (CA) dithering patterns and animations.
+
+1. **Image Loading and Color Approximation**:
+   - The script loads an image, converts it to RGB, resizes it to a user-defined grid size, and approximates its colors. It maps the colors of each pixel to the nearest defined color (RGB, CMYK, grayscale).
+
+2. **Initial State Generation**:
+   - Based on a chosen dithering option (like red, green, blue, cyan, magenta, yellow, black, white, gray, CMYK, black and white, or all), the script generates an initial state for the CA. The state depends on whether the pixels are of the chosen color (or non-black in some cases).
+
+3. **Cellular Automaton Rule Application**:
+   - A user-defined rule number (0-255) is converted to a binary representation. This representation defines the rules for the CA evolution. The script then applies these rules to evolve the CA pattern from the initial state.
+
+4. **CA Evolution and Frame Saving**:
+   - The CA evolves for a specified number of iterations (generations). Each state of the CA is saved as an individual frame in PNG format.
+
+5. **GIF Creation with Reverse Looping**:
+   - The script creates GIF animations from the saved frames. It includes a function to create a reverse looping GIF, showing the evolution forward and then in reverse. Separate GIFs are created for all frames, odd-numbered frames, and even-numbered frames.
+
+6. **User Interaction**:
+   - The script prompts the user to input the image file path, grid size, rule number, dithering option, and the number of generations.
+
+7. **Output Directory Creation and Management**:
+   - An output directory is created based on the current timestamp to store the generated frames and GIFs. The path to this directory is outputted to the user.
+
+
+## thresholdRULEDITHER.py
+
+This processes an image using cellular automata (CA) and dithering techniques to create a series of evolution frames and GIF animations. 
+
+1. **Image Loading and Processing**:
+   - The script loads an image from a specified path and converts it to grayscale. The image is resized to a user-defined grid size and normalized.
+
+2. **Otsu's Thresholding**:
+   - Implements Otsu's method to compute an optimal threshold value for image segmentation. This threshold is used to differentiate between foreground and background pixels.
+
+3. **Combining Otsu's Method and Mean Intensity**:
+   - The script calculates a threshold value by blending Otsu's threshold and the mean intensity of the image, with an adjustable bias factor.
+
+4. **Initial State Determination**:
+   - Based on a chosen dithering option ('whites', 'blacks', or 'grays'), the script determines the initial state of the cellular automaton, applying different threshold values.
+
+5. **Cellular Automata Rule Application**:
+   - The script applies a specified cellular automaton rule to generate patterns. The user inputs a rule number, and the script translates this into a binary representation, creating a mapping of cell states.
+
+6. **Image Evolution and Dithering**:
+   - The cellular automaton's evolution is computed over several iterations. During this process, pixels are dithered based on their state and the original image's intensity.
+
+7. **Saving Frames and Generating GIFs**:
+   - Each state of the CA evolution is saved as a separate frame. These frames are then compiled into a GIF to visualize the evolution over time. There are two GIFs created: one showing the state evolution and another displaying the dithered image evolution.
+
+8. **User Interaction**:
+   - The script interacts with the user to input parameters such as the image file path, grid size, rule number, dithering option, number of generations, and iterations per frame.
+
+9. **Output Generation**:
+   - The generated frames are saved in a directory, and the path to this directory is outputted to the user.
+
 ## abCA.py
 
 ![ca_evolution_20231120183918](https://github.com/EveryOneIsGross/CellularAutomata/assets/23621140/a48af7f3-7513-4711-a5b9-ade330a71788)
