@@ -30,6 +30,8 @@ This processes images to create cellular automata (CA) dithering patterns and an
 
 ## thresholdRULEDITHER.py
 
+![dithered_6](https://github.com/EveryOneIsGross/CellularAutomata/assets/23621140/75c14fc0-d787-4355-8525-3b6e5c7cf6c9)
+
 This processes an image using cellular automata (CA) and dithering techniques to create a series of evolution frames and GIF animations. 
 
 1. **Image Loading and Processing**:
