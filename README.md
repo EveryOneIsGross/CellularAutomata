@@ -4,28 +4,37 @@ Several CA ideas.
 
 ## ruleDITHER.py
 
-This processes images to create cellular automata (CA) dithering patterns and animations.
+![frame_3](https://github.com/EveryOneIsGross/CellularAutomata/assets/23621140/3cb59060-7229-4d06-bbb3-6e4db849930c)
 
-1. **Image Loading and Color Approximation**:
-   - The script loads an image, converts it to RGB, resizes it to a user-defined grid size, and approximates its colors. It maps the colors of each pixel to the nearest defined color (RGB, CMYK, grayscale).
+This script processes an image using cellular automata rules to create unique dithering effects, and then saves the evolution of these effects as GIF animations. Here's a summary of its functionalities:
 
-2. **Initial State Generation**:
-   - Based on a chosen dithering option (like red, green, blue, cyan, magenta, yellow, black, white, gray, CMYK, black and white, or all), the script generates an initial state for the CA. The state depends on whether the pixels are of the chosen color (or non-black in some cases).
+1. **Image Loading and Preprocessing**:
+   - The script loads an image file specified by the user.
+   - It resizes the image to a user-defined grid size and converts it to grayscale.
 
-3. **Cellular Automaton Rule Application**:
-   - A user-defined rule number (0-255) is converted to a binary representation. This representation defines the rules for the CA evolution. The script then applies these rules to evolve the CA pattern from the initial state.
+2. **Adaptive and Histogram-Based Thresholding**:
+   - The script offers different methods for thresholding the image: simple (a basic threshold), adaptive (based on local statistics like mean or median within a window), and histogram-based (using the image's histogram to determine thresholds).
+   - The adaptive thresholding adjusts to local changes in brightness, which is useful for images with varying lighting conditions.
+   - The histogram-based thresholding sets thresholds based on the distribution of pixel intensities, adapting to the specific contrast levels of the image.
 
-4. **CA Evolution and Frame Saving**:
-   - The CA evolves for a specified number of iterations (generations). Each state of the CA is saved as an individual frame in PNG format.
+3. **Dithering Options**:
+   - The user can choose to dither different parts of the image based on the grayscale intensity: whites, blacks, grays, or all pixels.
 
-5. **GIF Creation with Reverse Looping**:
-   - The script creates GIF animations from the saved frames. It includes a function to create a reverse looping GIF, showing the evolution forward and then in reverse. Separate GIFs are created for all frames, odd-numbered frames, and even-numbered frames.
+4. **Application of Cellular Automata Rules**:
+   - The script applies a specified cellular automata rule (defined by a rule number) to the thresholded image.
+   - The cellular automata rules are applied to each pixel and its neighbors (top, bottom, left, right), considering wrapping at edges for a seamless pattern.
 
-6. **User Interaction**:
-   - The script prompts the user to input the image file path, grid size, rule number, dithering option, and the number of generations.
+5. **Generation of Cellular Automata Patterns**:
+   - The script iteratively applies the cellular automata rules, creating a sequence of states (patterns) over a specified number of generations.
 
-7. **Output Directory Creation and Management**:
-   - An output directory is created based on the current timestamp to store the generated frames and GIFs. The path to this directory is outputted to the user.
+6. **Creation and Saving of GIF Animations**:
+   - The script saves several types of GIF animations showing the evolution of the cellular automata patterns:
+     - A linear non-reversed GIF showing all frames in sequence.
+     - Linear odd and even frames GIFs, separately displaying only odd or even frames in sequence.
+     - Looped GIFs that play the sequence forward and then in reverse, for all frames, and separately for odd and even frames.
+
+7. **User Interaction**:
+   - The script is interactive, prompting the user for inputs such as the image path, grid size, rule number, dither option, number of generations, threshold method, and parameters for adaptive thresholding.
 
 
 ## thresholdRULEDITHER.py
