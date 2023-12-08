@@ -48,6 +48,9 @@ Enter the window size for adaptive thresholding: 4
 Enter the method for adaptive thresholding (mean/median): median
 ```
 
+![looped_evolution](https://github.com/EveryOneIsGross/CellularAutomata/assets/23621140/bf60f539-1cfb-405d-a237-0e29e97d0ecd)
+
+
 ![frame_239](https://github.com/EveryOneIsGross/CellularAutomata/assets/23621140/db717639-dc88-40b6-8429-dd3cfc035ef6)
 
 
