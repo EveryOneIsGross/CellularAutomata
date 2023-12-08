@@ -37,6 +37,21 @@ This script processes an image using cellular automata rules to create unique di
    - The script is interactive, prompting the user for inputs such as the image path, grid size, rule number, dither option, number of generations, threshold method, and parameters for adaptive thresholding.
 
 
+```
+Enter the image filename/path: badroom_03.png
+Enter the grid size (e.g., 256): 1024
+Enter the rule number (0-255): 110
+Choose which to dither (grays/blacks/whites/all): all
+Enter the number of generations: 256
+Enter the threshold method (simple/adaptive/histogram): adaptive
+Enter the window size for adaptive thresholding: 4
+Enter the method for adaptive thresholding (mean/median): median
+```
+
+![frame_239](https://github.com/EveryOneIsGross/CellularAutomata/assets/23621140/db717639-dc88-40b6-8429-dd3cfc035ef6)
+
+
+
 ## thresholdRULEDITHER.py
 
 ![dithered_6](https://github.com/EveryOneIsGross/CellularAutomata/assets/23621140/75c14fc0-d787-4355-8525-3b6e5c7cf6c9)
