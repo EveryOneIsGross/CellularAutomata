@@ -2,6 +2,23 @@
 
 Several CA ideas. 
 
+## comicsanAUTOMATA.py
+
+3D automata in py game, with fm synthesis.
+
+'''
+[ travel down a layer
+] travel up a layer
+pgUP speed up
+pgDWN slow down
+esc reset
+backspace removes a character
+
+type something to start generating
+'''
+
+[https://github.com/EveryOneIsGross/CellularAutomata/blob/main/comicsansAUTOMATA.py](https://github.com/EveryOneIsGross/CellularAutomata/blob/main/comicsansAUTOMATA.py)
+
 ## ruleDITHER.py
 
 ![frame_3](https://github.com/EveryOneIsGross/CellularAutomata/assets/23621140/3cb59060-7229-4d06-bbb3-6e4db849930c)
