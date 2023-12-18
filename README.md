@@ -6,16 +6,23 @@ Several CA ideas.
 
 3D automata in py game, with fm synthesis.
 
-'''
+```
 [ travel down a layer
+
 ] travel up a layer
+
 pgUP speed up
+
 pgDWN slow down
+
 esc reset
+
 backspace removes a character
 
+
 type something to start generating
-'''
+
+```
 
 [https://github.com/EveryOneIsGross/CellularAutomata/blob/main/comicsansAUTOMATA.py](https://github.com/EveryOneIsGross/CellularAutomata/blob/main/comicsansAUTOMATA.py)
 
