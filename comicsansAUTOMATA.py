@@ -5,7 +5,7 @@ from queue import Queue
 
 # Constants
 GRID_SIZE = (8, 8, 7)  # 3D grid size
-CELL_SIZE = 128  # Size of each cell in pixels
+CELL_SIZE = 64  # Size of each cell in pixels
 FRAME_RATE = 2  # Frames per second
 
 # Game of Life rules
@@ -16,7 +16,7 @@ SURVIVAL_RULE = [2, 1]  # Number of neighbors for an alive cell to stay alive
 pygame.init()
 
 # Create a font for rendering text
-font = pygame.font.SysFont("Comic Sans MS", 64, bold=True)
+font = pygame.font.SysFont("Comic Sans MS", 24, bold=True)
 
 # Window settings
 WINDOW_WIDTH = GRID_SIZE[0] * CELL_SIZE
@@ -171,12 +171,12 @@ while running:
                     # Corrected: Pass all required arguments to char_to_freq
                     freq = char_to_freq(char, x, y, current_layer, GRID_SIZE)
 
-                    mod_freq = 10 * (current_layer + 1)
+                    mod_freq = 10 * (current_layer + freq)
                     mod_index = 5
                     # duration is number of active cells in the current layer
                     #duration = np.sum(new_grid[:, :, current_layer])
                     # duration is low processor intensive count of active cells in the current layer
-                    duration = current_layer + 1.5
+                    duration = 0.5 + current_layer
                     sound_wave = apply_fm_synthesis(freq, mod_freq, mod_index, duration)
                     start_time = pygame.time.get_ticks()
                     sound_queue.put((sound_wave, start_time))
@@ -184,14 +184,14 @@ while running:
     grid = new_grid
 
     # Clear the window
-    window.fill((0, 0, 0))
+    window.fill((255, 255, 255))
 
     # Render the 3D grid with characters from user input for the current layer
     for x in range(GRID_SIZE[0]):
         for y in range(GRID_SIZE[1]):
             cell_rect = pygame.Rect(x * CELL_SIZE, y * CELL_SIZE, CELL_SIZE, CELL_SIZE)
             if grid[x][y][current_layer] == 1:
-                pygame.draw.rect(window, (0, 0, 0), cell_rect)
+                pygame.draw.rect(window, (255, 255, 255), cell_rect)
                 color_value = (255 * current_layer) // (GRID_SIZE[2] - 1)
                 text_color = (color_value, color_value, color_value)
                 character = user_input[input_index % len(user_input)] if user_input else " "
