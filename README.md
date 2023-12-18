@@ -6,6 +6,9 @@ Several CA ideas.
 
 3D automata in py game, with fm synthesis.
 
+![comicsan automata](https://github.com/EveryOneIsGross/CellularAutomata/assets/23621140/e99502e5-33a5-4b3a-8a52-a325bf219ae7)
+
+
 ```
 [ travel down a layer
 
